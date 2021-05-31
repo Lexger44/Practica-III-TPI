@@ -2,7 +2,7 @@ Comandos para creacion de base de datos:
 create database ventas character set utf8 collate utf8_general_ci;
 CREATE USER 'venta' IDENTIFIED BY 'vendedor';
 
-GRANT USAGE  ON *.* TO 'ventas'@localhost IDENTIFIED BY 'vendedor';
-GRANT ALL privileges ON `ventas`.* TO 'ventas'@localhost;
+GRANT USAGE  ON *.* TO 'venta'@localhost IDENTIFIED BY 'vendedor';
+GRANT ALL privileges ON `ventas`.* TO 'venta'@localhost;
  
 FLUSH PRIVILEGES;
