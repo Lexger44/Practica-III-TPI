@@ -69,6 +69,10 @@ body {
   outline: 0 !important;
 }
 
+.separacion-arriba{
+  margin-top: auto;
+}
+
 hr {
   box-sizing: content-box;
   height: 0;
