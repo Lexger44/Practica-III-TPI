@@ -44,7 +44,7 @@ Route::get('Productos/crear',function(){
 })->name('RutaCrearProducto');
 
 Route::get('Ventas', function(){
-    $NuevaVenta= Compras::join('productos','compra.idProducto','=','Productos.idProducto')->where('idUsuario',auth()->id())->get();
+    $NuevaVenta= Compras::join('productos','compra.idProducto','=','productos.idProducto')->where('idUsuario',auth()->id())->get();
     return view('ventas',compact('NuevaVenta'));
 })->name('RutaProductosVendidos');
 
